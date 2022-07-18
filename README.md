@@ -1,5 +1,5 @@
-# JAVA_test_FEEFO_UK
-JAVA Test - Full Stack Position at Feefo UK
+# JAVA_APP - FEEFO, UK
+JAVA App - Full Stack Position at Feefo UK
 
 
 IDE: VSCode
