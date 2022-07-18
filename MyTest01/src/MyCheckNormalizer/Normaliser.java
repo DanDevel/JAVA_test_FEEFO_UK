@@ -5,7 +5,7 @@ public class Normaliser {
 
     public String normalise(String strTest){
 
-        System.out.println("Checking : " + strTest);
+        // System.out.println("Checking : " + strTest);
         String[] jobTitlesList = {"Architect", "Software engineer", "Quantity surveyor",  "Accountant"};
         int[] resultados_q = new int[] {0, 0, 0, 0}; // ranking for 'q'
         float[] resultados_q_f = new float[] {0, 0, 0, 0}; // ranking for 'q'
@@ -14,11 +14,11 @@ public class Normaliser {
         String[] jobTitleAnalysis; // job title
         int qtdWordsPercent = 100 / wordsInput.length ; // qtdWordsPercent = % / words
         String result;
-        System.out.println(qtdWordsPercent);
+        // System.out.println(qtdWordsPercent);
         float q = 0;
         int m = 0;
         for(m=0; m < jobTitlesList.length; m++ ){ // index
-            System.out.println("analysisng job title : " + jobTitlesList[m]);
+            // System.out.println("analysisng job title : " + jobTitlesList[m]);
             String dataString = jobTitlesList[m];
             jobTitleAnalysis = dataString.toUpperCase().split(" "); // job title in parts // i could use a kind of 'test every char on the string to be more detailed.' // however i already have a given array
             for(String strJobTile: jobTitleAnalysis){
@@ -29,8 +29,8 @@ public class Normaliser {
                         resultados_q_f[m] = q;
                         // if(qtdWordsPercent == 100){
                         if(q >= 1.0){
-                            System.out.println("The 100% match is:qtdWordsPercent == 100: "+jobTitlesList[m]);
-                            System.out.println("best match: "+jobTitlesList[m] + " " + (float)qtdWordsPercent / 100 );
+                            // System.out.println("The 100% match is:qtdWordsPercent == 100: "+jobTitlesList[m]);
+                            // System.out.println("best match: "+jobTitlesList[m] + " " + (float)qtdWordsPercent / 100 );
                             result = jobTitlesList[m];
                             return result;
                         }
@@ -49,17 +49,17 @@ public class Normaliser {
                 best = cnt;
                 d = best;
                 q = (float)best / 100;
-                System.out.println("The best ranking is: "+resultados_q[cnt]);
+                // System.out.println("The best ranking is: "+resultados_q[cnt]);
                 break; // 1st found
             }else{
                 best = cnt;
                 d =  best;
                 q = (float)best / 100;
-                System.out.println("The best ranking is: "+resultados_q[cnt]);
+                // System.out.println("The best ranking is: "+resultados_q[cnt]);
             }
         }
 
-        System.out.println("best match: "+jobTitlesList[cnt] + " value: " + q);
+        // System.out.println("best match: "+jobTitlesList[cnt] + " value: " + q);
         result = jobTitlesList[cnt];
         return result;
     }
