@@ -21,7 +21,7 @@ if user input has three words, "myUser Input Engineer", its value :
 3 (words) / 100 = 33%
 
 
-Then each sentence is compared with the key, summing each value per sentence to generate an accurate result, for each user innput.
+Then each sentence is compared with the key, summing each value per sentence to generate an accurate result, for each user input.
 
 
 
