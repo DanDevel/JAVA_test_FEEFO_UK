@@ -29,6 +29,7 @@ Then each word in sentence (user input) is compared with the key, summing each w
 ### What user's input bellow matches with our key: "Engineer" ? 
 
 1 - "C# Engineer"
+
 2 - "Engineer"
 
 ### Correct answer:
