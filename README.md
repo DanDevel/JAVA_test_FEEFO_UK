@@ -3,3 +3,25 @@ JAVA App - Full Stack Position at Feefo UK
 
 
 IDE: VSCode
+
+
+For this project i created a score for each sentences comparison.
+
+How it works:
+To compare with our key: "Engineer"
+
+if user input has only one word, "myUserInputAdministrator", its value :
+1 (word) / 100 = 100%
+
+
+if user input has two words, "myUserInput Engineer", its value :
+2 (words) / 100 = 50%
+
+if user input has three words, "myUser Input Engineer", its value :
+3 (words) / 100 = 33%
+
+
+Then each sentence is compared with the key, summing each value per sentence to generate an accurate result, for each user innput.
+
+
+
