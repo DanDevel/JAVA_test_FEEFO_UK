@@ -24,4 +24,17 @@ if user input has three words, "myUser Input Engineer", its value :
 Then each word in sentence (user input) is compared with the key, summing each word's value per sentence to generate an accurate result, for each user input, compared with our key: "Engineer".
 
 
+## Conclusion Test:
+
+### What user's input bellow matches with our key: "Engineer" ? 
+
+1 - "C# Engineer"
+2 - "Engineer"
+
+### Correct answer:
+
+2 - "Engineer" match: 100% while the sentence "C# Engineer" only match: 50%.
+
+
+
 
